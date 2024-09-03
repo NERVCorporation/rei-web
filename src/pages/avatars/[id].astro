@@ -14,7 +14,7 @@ import Layout from "../../layouts/Layout.astro";
   let avatars: string[] = [];
 
   async function fetchAvatars() {
-    const response = await fetch(`https://dev.shiro.wtf/avatars/${id}`);
+    const response = await fetch(`http://dev.lain.cam:59076/avatars/${id}`);
     const data = await response.json();
     const loadingElement = document.getElementById("loading");
     if (!data.success) {
